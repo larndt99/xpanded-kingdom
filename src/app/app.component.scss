@@ -1,0 +1,50 @@
+:host {
+
+mat-toolbar {
+    background-color: black;
+
+}
+
+span {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    color: #FFFFFF;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    cursor: pointer;
+}
+
+.logomark {
+    width: 94.93px;
+    height: 40px;
+}
+
+.logomark:hover {
+    cursor: pointer;
+}
+
+.wordmark {
+    width: 94.93px;
+    height: 40px;
+}
+
+.wordmark:hover {
+    cursor: pointer;
+    color: red;
+
+}
+
+
+.mat-toolbar-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.span:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+}
