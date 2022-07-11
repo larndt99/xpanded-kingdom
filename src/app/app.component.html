@@ -1,21 +1,24 @@
+
 <mat-toolbar>
   <mat-toolbar-row>
-    <img class="logomark" src="assets/images/XK_Logomark.svg"
+    <img routerLink="home" class="logomark" src="assets/images/XK_Logomark.svg"
     onmouseover="this.src='assets/images/XK_Logomark_Red.svg'"
     onmouseout="this.src='assets/images/XK_Logomark.svg'">
     <nav>
       <div>
-      <span class="span">HOME</span>
-      <span class="span">SHIFT-ENTER</span>
-      <span class="span">GAMING</span>
-      <span class="span">CRYPTO</span>
+      <span routerLinkActive="active_route" routerLink="home" class="span">HOME</span>
+      <span routerLinkActive="active_route" routerLink="shift-enter" class="span">SHIFT-ENTER</span>
+      <span routerLinkActive="active_route" routerLink="gaming" class="span">GAMING</span>
+      <span routerLinkActive="active_route" routerLink="crypto" class="span">CRYPTO</span>
     </div>
     </nav>
     <img class="wordmark" src="assets/images/XK_Wordmark.svg"
     onmouseover="this.src='assets/images/XK_Wordmark_Red.svg'"
     onmouseout="this.src='assets/images/XK_Wordmark.svg'">
-    
   </mat-toolbar-row>
 </mat-toolbar>
+<router-outlet></router-outlet>
+<app-footer></app-footer>
+
 
 

@@ -6,17 +6,27 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon'; 
+import { CryptoModule } from './crypto/crypto.module';
+import { GamingModule } from './gaming/gaming.module';
+import { HomeModule } from './home/home.module';
+import { ShiftEnterModule } from './shift-enter/shift-enter.module';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    CryptoModule,
+    GamingModule,
+    HomeModule,
+    ShiftEnterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
