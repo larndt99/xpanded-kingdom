@@ -11,6 +11,10 @@ import { GamingModule } from './gaming/gaming.module';
 import { HomeModule } from './home/home.module';
 import { ShiftEnterModule } from './shift-enter/shift-enter.module';
 import { FooterComponent } from './footer/footer.component';
+import {MatButtonModule} from '@angular/material/button'; 
+import {MatDialogModule} from '@angular/material/dialog';
+
+
 
 @NgModule({
   declarations: [
@@ -26,7 +30,9 @@ import { FooterComponent } from './footer/footer.component';
     CryptoModule,
     GamingModule,
     HomeModule,
-    ShiftEnterModule
+    ShiftEnterModule,
+    MatButtonModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,12 +1,13 @@
 .container {
     text-align: center;
-
- 
-  
-    
+    background-color: black;
 }
 
-.ig {
+.background {
+    background-color: #121212;
+}
+
+.socials {
     height: 35px;
     width: 35px;
     display: inline-block;
@@ -16,13 +17,12 @@
 }
 
 .footer {
-    background-color: #121212;
+    
     color: white;
-    position: absolute;
+    position: fixed;
     width: 100%;
     bottom: 0;
     padding-top: 20px;
-    padding-bottom: 20px;
    
 }
 
