@@ -1,0 +1,11 @@
+<div class="background" [ngStyle]="{backgroundImage:'url(../../../assets/images/' + series.backgroundImage +')'}"
+>
+    <!-- <img width="100%" height="auto" class="background-image" src="assets/images/Shift-enter2.png"> -->
+    <div class="info" [ngStyle]="{bottom: contentHeight + 'px'}">
+        <img class="logo" [src]="'assets/images/' + series.logo">
+        <button class="play" mat-raised-button><img class="play" src="assets/images/Play.png">WATCH</button>
+        <h1>{{ series.title }}</h1>
+    </div>
+
+
+</div>

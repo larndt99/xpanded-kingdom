@@ -2,7 +2,7 @@
 
 mat-toolbar {
     background-color: black;
-
+    width: 100%;
 }
 
 span {
@@ -32,8 +32,6 @@ span {
 
 .wordmark:hover {
     cursor: pointer;
-    color: red;
-
 }
 
 
@@ -42,9 +40,13 @@ span {
     justify-content: space-between;
 }
 
-.span:hover {
-    color: white;
+.active_route {
     text-decoration: underline;
 }
+
+button {
+    font-weight: bold;
+}
+
 
 }
