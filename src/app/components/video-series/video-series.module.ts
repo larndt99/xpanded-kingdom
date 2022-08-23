@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { EpisodeSliderModule } from '../episode-slider/episode-slider.module';
 import { VideoSeriesComponent } from './video-series.component';
 
 
@@ -11,7 +12,8 @@ import { VideoSeriesComponent } from './video-series.component';
     VideoSeriesComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    EpisodeSliderModule
   ],
 })
 export class VideoSeriesModule { }

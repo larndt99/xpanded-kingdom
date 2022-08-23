@@ -1,0 +1,16 @@
+<div class="slider">
+    <div #slider class="slider-content">
+        <div *ngIf="canPrevious" class="previous-button" [style.height]="sliderHeight + 'px'" (click)="previous()">
+            <mat-icon inline="true">arrow_left</mat-icon>
+        </div>
+        <div *ngIf="canNext" class="next-button" [style.height]="sliderHeight + 'px'" [style.left]="(sliderWidth + 50) + 'px'" (click)="next()">
+            <mat-icon inline="true">arrow_right</mat-icon>
+        </div>
+        <div class="episode-container" *ngFor="let episode of orderedEpisodes; first as first"
+            [ngStyle]="{'margin': first ? '0px 0px 0px 0px' : '0px 0px 0px ' + sliderItemPadding + 'px'}">
+            <img class="episode"
+                [src]="'assets/images/' +  episode.thumbnail"
+                [style.width]="sliderItemWidth + 'px'">
+        <div>
+    </div>
+</div>
