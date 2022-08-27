@@ -1,0 +1,49 @@
+:host {
+    .slider {
+        margin-left: 95px;
+        margin-right: 95px;
+        .slider-content {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            overflow-x: hidden;
+
+            .previous-button {
+                position: absolute;
+                width: 50px;
+                cursor: pointer;
+                color: white;
+                font-size: 75px;
+                mat-icon {
+                    height: unset;
+                    line-height: unset;
+                    width: unset;
+                    margin-left: -15px;
+                    margin-top: 90px;
+                }
+            }
+
+            .next-button {
+                position: absolute;
+                width: 50px;
+                cursor: pointer;
+                color: white;
+                font-size: 75px;
+                mat-icon {
+                    height: unset;
+                    line-height: unset;
+                    width: unset;
+                    margin-left: -15px;
+                    margin-top: 90px;
+                }
+            }
+
+            .episode-container {
+                border: 2px solid white;
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+        }
+
+    }
+}

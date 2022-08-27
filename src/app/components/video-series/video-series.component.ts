@@ -1,26 +1,18 @@
-import { AfterViewInit, Component, Input, OnInit } from '@angular/core';
-import { VideoSeries } from 'src/app/shift-enter/video-series';
+import { Component, Input } from '@angular/core';
+import { VideoEpisode, VideoSeries } from './video-series';
 
 @Component({
   selector: 'app-video-series',
   templateUrl: './video-series.component.html',
   styleUrls: ['./video-series.component.scss']
 })
-export class VideoSeriesComponent implements AfterViewInit {
-
+export class VideoSeriesComponent {
   @Input()
   public series = {} as VideoSeries;
 
-  public contentHeight: number | undefined;
+  @Input()
+  public backgroundPosition = 'right';
 
-  constructor() {
-
-  }
-
-  ngAfterViewInit() {
-      this.contentHeight = window.innerHeight * .6;
-  }
-
-
+  public selectedEpisode = {} as VideoEpisode;
 
 }
