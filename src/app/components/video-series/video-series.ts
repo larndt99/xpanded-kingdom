@@ -8,6 +8,7 @@ export interface VideoSeries {
 }
 
 export interface VideoEpisode {
+    id: number;
     title: string;
     description: string;
     thumbnail: string;

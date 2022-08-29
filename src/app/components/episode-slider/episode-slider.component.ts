@@ -97,5 +97,9 @@ export class EpisodeSliderComponent implements AfterViewInit {
     }
   }
 
+  public episodeClick(episode: VideoEpisode) {
+      this.selectedEpisode.emit(episode);
+      
+  }
 
 }

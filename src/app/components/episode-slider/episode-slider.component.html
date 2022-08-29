@@ -6,11 +6,12 @@
         <div *ngIf="canNext" class="next-button" [style.height]="sliderHeight + 'px'" [style.left]="(sliderWidth + 50) + 'px'" (click)="next()">
             <mat-icon inline="true">arrow_right</mat-icon>
         </div>
-        <div class="episode-container" *ngFor="let episode of orderedEpisodes; first as first"
+        <div class="episode-container" *ngFor="let episode of orderedEpisodes; first as first" (click)="episodeClick(episode)"
             [ngStyle]="{'margin': first ? '0px 0px 0px 0px' : '0px 0px 0px ' + sliderItemPadding + 'px'}">
-            <img class="episode"
+            <img class="episode" 
                 [src]="'assets/images/' +  episode.thumbnail"
-                [style.width]="sliderItemWidth + 'px'">
+                [style.width]="sliderItemWidth + 'px'" 
+                >
         <div>
     </div>
 </div>

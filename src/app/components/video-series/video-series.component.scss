@@ -32,9 +32,13 @@ img.play {
    padding-right: 10px;
 }
 
+
 button.play {
     display: flex;
     padding: 5px 30px;
+    align-items: center;
+    font-weight: bolder;
+    cursor: pointer;
 }
 
 h1 {
